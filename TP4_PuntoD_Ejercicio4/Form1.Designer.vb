@@ -24,6 +24,7 @@ Partial Class Form1
     Private Sub InitializeComponent()
         lstSalida = New ListBox()
         txtIngreso = New TextBox()
+        cmdEjecutar = New Button()
         SuspendLayout()
         ' 
         ' lstSalida
@@ -41,11 +42,21 @@ Partial Class Form1
         txtIngreso.Size = New Size(150, 31)
         txtIngreso.TabIndex = 1
         ' 
+        ' cmdEjecutar
+        ' 
+        cmdEjecutar.Location = New Point(320, 95)
+        cmdEjecutar.Name = "cmdEjecutar"
+        cmdEjecutar.Size = New Size(112, 34)
+        cmdEjecutar.TabIndex = 2
+        cmdEjecutar.Text = "Ejecutar"
+        cmdEjecutar.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(cmdEjecutar)
         Controls.Add(txtIngreso)
         Controls.Add(lstSalida)
         Name = "Form1"
@@ -56,5 +67,6 @@ Partial Class Form1
 
     Friend WithEvents lstSalida As ListBox
     Friend WithEvents txtIngreso As TextBox
+    Friend WithEvents cmdEjecutar As Button
 
 End Class
