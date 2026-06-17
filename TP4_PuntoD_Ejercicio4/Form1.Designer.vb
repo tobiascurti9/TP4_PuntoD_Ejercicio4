@@ -23,50 +23,50 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         lstSalida = New ListBox()
-        txtIngreso = New TextBox()
         cmdEjecutar = New Button()
+        lstSalida1 = New ListBox()
         SuspendLayout()
         ' 
         ' lstSalida
         ' 
         lstSalida.FormattingEnabled = True
-        lstSalida.Location = New Point(287, 213)
+        lstSalida.Location = New Point(43, 35)
         lstSalida.Name = "lstSalida"
-        lstSalida.Size = New Size(180, 129)
+        lstSalida.Size = New Size(288, 354)
         lstSalida.TabIndex = 0
-        ' 
-        ' txtIngreso
-        ' 
-        txtIngreso.Location = New Point(302, 149)
-        txtIngreso.Name = "txtIngreso"
-        txtIngreso.Size = New Size(150, 31)
-        txtIngreso.TabIndex = 1
         ' 
         ' cmdEjecutar
         ' 
-        cmdEjecutar.Location = New Point(320, 95)
+        cmdEjecutar.Location = New Point(337, 1)
         cmdEjecutar.Name = "cmdEjecutar"
         cmdEjecutar.Size = New Size(112, 34)
         cmdEjecutar.TabIndex = 2
         cmdEjecutar.Text = "Ejecutar"
         cmdEjecutar.UseVisualStyleBackColor = True
         ' 
+        ' lstSalida1
+        ' 
+        lstSalida1.FormattingEnabled = True
+        lstSalida1.Location = New Point(473, 10)
+        lstSalida1.Name = "lstSalida1"
+        lstSalida1.Size = New Size(292, 404)
+        lstSalida1.TabIndex = 3
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(lstSalida1)
         Controls.Add(cmdEjecutar)
-        Controls.Add(txtIngreso)
         Controls.Add(lstSalida)
         Name = "Form1"
         Text = "Form1"
         ResumeLayout(False)
-        PerformLayout()
     End Sub
 
     Friend WithEvents lstSalida As ListBox
-    Friend WithEvents txtIngreso As TextBox
     Friend WithEvents cmdEjecutar As Button
+    Friend WithEvents lstSalida1 As ListBox
 
 End Class
