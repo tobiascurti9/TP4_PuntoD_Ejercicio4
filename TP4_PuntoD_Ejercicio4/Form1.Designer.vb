@@ -22,10 +22,39 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        components = New System.ComponentModel.Container()
+        lstSalida = New ListBox()
+        txtIngreso = New TextBox()
+        SuspendLayout()
+        ' 
+        ' lstSalida
+        ' 
+        lstSalida.FormattingEnabled = True
+        lstSalida.Location = New Point(287, 213)
+        lstSalida.Name = "lstSalida"
+        lstSalida.Size = New Size(180, 129)
+        lstSalida.TabIndex = 0
+        ' 
+        ' txtIngreso
+        ' 
+        txtIngreso.Location = New Point(302, 149)
+        txtIngreso.Name = "txtIngreso"
+        txtIngreso.Size = New Size(150, 31)
+        txtIngreso.TabIndex = 1
+        ' 
+        ' Form1
+        ' 
+        AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(txtIngreso)
+        Controls.Add(lstSalida)
+        Name = "Form1"
         Text = "Form1"
+        ResumeLayout(False)
+        PerformLayout()
     End Sub
+
+    Friend WithEvents lstSalida As ListBox
+    Friend WithEvents txtIngreso As TextBox
 
 End Class
